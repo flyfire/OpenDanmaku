@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: "com.jfrog.bintray"
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: "com.jfrog.bintray"
 
 // This is the library version used when deploying the artifact
 version = "1.0.0"
@@ -36,7 +36,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.0'
 }
 
-
+/*
 def siteUrl = 'https://github.com/linsea/OpenDanmaku'      // Homepage URL of the library
 def gitUrl = 'https://github.com/linsea/OpenDanmaku.git'   // Git repository URL
 group = "com.linsea"                      // Maven Group ID for the artifact
@@ -80,6 +80,7 @@ install {
         }
     }
 }
+ */
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -96,6 +97,7 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
+/*
 artifacts {
     archives javadocJar
     archives sourcesJar
@@ -132,4 +134,5 @@ bintray {
         }
     }
 }
+ */
 

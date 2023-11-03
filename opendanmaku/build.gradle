@@ -6,12 +6,12 @@ apply plugin: 'com.android.library'
 version = "1.0.0"
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 29
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
-        minSdkVersion 10
-        targetSdkVersion 22
+        minSdkVersion 21
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0.0"
     }
@@ -33,7 +33,7 @@ tasks.withType(JavaCompile) {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.2.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
 
 /*
